@@ -1,0 +1,14 @@
+sftp:
+  monitor:
+#    folder: "/Inbox/"
+    baseDir: "/Inbox/"
+    pollingDir: "/Inbox/samay_demo/UNPROCESSED"
+    erroredDir: "Inbox/samay_demo/ERRORED"
+    backlogDir: "Inbox/samay_demo/BACKLOG"
+    processingDir: "Inbox/samay_demo/PROCESSING"
+    processedDir: "Inbox/samay_demo/PROCESSED"
+    deletedDir: "Inbox/DELETED"
+    ignoredDir: "Inbox/samay_demo/IGNORED"
+    triggerType: "FILE_ARRIVAL_EVENT"
+    extension: ".csv"
+    pollInterval: 60000

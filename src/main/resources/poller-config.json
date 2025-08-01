@@ -1,0 +1,10 @@
+{
+  "INTERVAL": {
+    "scheduleType": "INTERVAL",
+    "frequencyValue": 2,
+    "frequencyUnit": "MINUTES"
+  }
+}
+
+
+

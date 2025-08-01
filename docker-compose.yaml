@@ -1,0 +1,17 @@
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: samay_scheduler_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_metadata_data:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+    restart: unless-stopped
+
+volumes:
+  postgres_metadata_data:
